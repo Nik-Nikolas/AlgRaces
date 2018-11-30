@@ -1,5 +1,5 @@
 // Algorithms races.
-// Igor Lobanov. 2017
+// Igor Lobanov. 2018
 //
 // This is a launcher main file.
 
@@ -10,9 +10,9 @@ int main( int argc, char** argv )
   STARTUPINFO si;
   PROCESS_INFORMATION pi;
 
-  ZeroMemory( &si, sizeof( si ) );
-  si.cb = sizeof( si );
-  ZeroMemory( &pi, sizeof( pi ) );
+  ZeroMemory( &si, sizeof(si) );
+  si.cb = sizeof(si);
+  ZeroMemory( &pi, sizeof(pi) );
 
   char stringi  [BUFF_SIZE] = "";
   char stringj  [BUFF_SIZE] = "";
@@ -38,7 +38,7 @@ int main( int argc, char** argv )
   // Read main settings from file.
   std::ifstream fromFile ( "start_data.txt" );
 
-  long long arrSize = 0LL;
+  long long arrSize   = 0LL;
 
   fromFile >> arrSize;
 
@@ -52,14 +52,13 @@ int main( int argc, char** argv )
       algVec.push_back( x );
   }
 
-  for( size_t i = 1; i <= ARR_AMOUNT; ++i ){
+  for( size_t i = 1; i <= ARR_AMOUNT; ++i){
     fromFile >> x;
     if( x != 0 )
       arrVec.push_back( x );
   }
 
-  // "%lld" for LONG LONG
-  snprintf( stringArr, BUFF_SIZE, "%lld", arrSize );
+  snprintf( stringArr, BUFF_SIZE, "%d", arrSize );
 
   // i - algorithm type from vector.
   for( size_t i = 0; i < algVec.size(); ++i ){

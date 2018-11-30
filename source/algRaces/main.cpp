@@ -1,18 +1,16 @@
 // Algorithms races.
-// Igor Lobanov. 2017
+// Igor Lobanov. 2018
 //
-// This is a main.cpp file.
+// This is a main file.
 
 #include "algorithmsRaces.h"
-#define NDEBUG
-#include <cassert>
 
-int main( int argc, char** argv ){
+int main(int argc, char** argv){
 
   using User::startAlgorithmRace;
   using User::warnUser;
 
-  assert( 6 == argc ); // 6 types of sorting.
+  assert( 6 == argc );
 
   long long uBoundary = atoll( argv[3] );
 
@@ -25,7 +23,7 @@ int main( int argc, char** argv ){
     }
     catch( std::bad_alloc ){ // All heap memory allocation malfunctions.
 
-      warnUser( "\nNo enougth system memory to deploy an array with size ",
+      warnUser( "\nNo enougth system memory to deploy array with size ",
                 uBoundary,
                 ".\nTrying to halve the array size...\n" );
 
@@ -41,12 +39,10 @@ int main( int argc, char** argv ){
       warnUser( "\n",
                 err.upperBoundary_,
                 " is incorrect array upper boundary!\nNew boundary ",
-                Graphics::IS_GRAPHICS_MODE ? Graphics::SCREEN_Y_MAX :
-                static_cast<long long>( UINT_MAX ),
+                UINT_MAX,
                 " will be assigned instead.\n" );
 
-      uBoundary = Graphics::IS_GRAPHICS_MODE ? Graphics::SCREEN_Y_MAX :
-                  static_cast<long long>( UINT_MAX );
+      uBoundary = UINT_MAX;
     }
     catch( Error::IosError err ){ // File errors.
 
@@ -55,9 +51,7 @@ int main( int argc, char** argv ){
 
       throw;
     }
-    catch( ... ){
-      throw;
-    }
+    catch( ... ){ throw; }
   }
 
   return 0;

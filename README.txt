@@ -1,5 +1,5 @@
 // Algorithms races.
-// Igor Lobanov. 2017
+// Igor Lobanov. 2018
 //
 // Program allows to sort up to 5 types of numeric sequences using up to 6 sort
 // algorithms simultaneously 

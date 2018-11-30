@@ -1,5 +1,5 @@
 // Algorithms races.
-// Igor Lobanov. 2017
+// Igor Lobanov. 2018
 //
 // This is a launcher header file.
 
@@ -12,14 +12,12 @@
 #include <iostream>
 
 #include <vector>
-#include <limits.h>
 
-const unsigned BUFF_SIZE    = 21; // Needs 19 figures for LL MAX
-const unsigned ALG_AMOUNT   = 6;  // Algorithms amount.
-const unsigned ARR_AMOUNT   = 5;  // Raw data arrays amount.
+const unsigned BUFF_SIZE    = 18;
+const unsigned ALG_AMOUNT   = 6; // Algorithms amount.
+const unsigned ARR_AMOUNT   = 5; // Raw data arrays amount.
 
 // Sets graphics mode ON.
-// Comment this line to compile in pure math mode.
-#define SHOW_GRAPHICS
+//#define SHOW_GRAPHICS
 
 #endif
