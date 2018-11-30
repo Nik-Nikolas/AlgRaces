@@ -4,7 +4,7 @@
 // Program allows to sort up to 5 types of numeric sequences using up to 6 sort
 // algorithms simultaneously 
 // and visualize sorting processes like in real races.
-// This means that you can launch 5 x 6 = 30 different sorting processes at the
+// This means that you can launch up to 5 x 6 = 30 different sorting processes at the
 // same time.
 //
 //
