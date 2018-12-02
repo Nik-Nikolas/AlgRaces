@@ -1,6 +1,6 @@
  Algorithms races.
  Igor Lobanov. 2017
-
+ 
 
  This app allows to sort up to 5 types of numeric sequences using up to 6 sort
  algorithms simultaneously and visualize sorting processes like in real races.
@@ -11,16 +11,14 @@
  at the same time. Each process is independent. Printing any key for active 
  window after algorithm is finished sorting will restart it's execution.
 
-
  To start - launch argRacesLauncher.exe - graphics  mode ( slow ).
  or argRacesLauncherNoGraph.exe         - pure math mode ( fast ).
-
- Launcher launches up to 30 applications.
 
  To change parameters - change start_data.txt file (must be in the folder of
  .exe files)
 
- This .txt file contains following numeric constants ( order numbers shown below ):
+ start_data.txt file contains following numeric constants 
+ ( order numbers shown below ):
 
  FIRST LINE:  NUMERIC SEQUENCE SIZE ( elements amount )
 
@@ -35,7 +33,7 @@
     	(6) Heap sort
 
 	EXAMPLE 1: "1 2 3 4 5 6" - all 6 alg.types sortings will be used.
-	EXAMPLE 2: "0 0 0 0 5 6" - only Quick and Heap sortings will be used.
+	EXAMPLE 2: "0 6 0 0 5 0" - only Quick and Heap sortings will be used.
 	
 
  THIRD LINE: NUMERIC SEQUENCES ( num.sequence number - to use certain num.sequence, 
