@@ -1,8 +1,9 @@
  Algorithms races.
  Igor Lobanov. 2017
 
- ![]([https://github.com/Nik-Nikolas/AlgRaces/blob/master/prtSc1.png])
- 
+ ![](https://github.com/Nik-Nikolas/AlgRaces/blob/master/prtSc1.jpg)
+![](https://github.com/Nik-Nikolas/AlgRaces/blob/master/prtSc2.jpg)
+
 
  This app allows to sort up to 5 types of numeric sequences using up to 6 sort
  algorithms simultaneously and visualize sorting processes like in real races.
