@@ -1,5 +1,4 @@
- Algorithms races.
- Igor Lobanov. 2017
+ Algorithms races
  
  ![](https://github.com/Nik-Nikolas/AlgRaces/blob/master/prtSc1.jpg)
 
